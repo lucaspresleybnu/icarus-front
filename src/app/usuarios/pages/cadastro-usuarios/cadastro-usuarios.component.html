@@ -14,20 +14,8 @@
       <h6 class="heading-small text-muted mb-4">Login</h6>
       <div class="pl-lg-4">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="form-group">
-              <label class="form-control-label" for="input-chave"
-                >Chave</label
-              >
-              <input
-                type="text"
-                id="input-chave"
-                class="form-control form-control-alternative"
-                placeholder="Chave"
-                value="CH43Q"
-              />
-            </div>
-          </div>
+
+          <!-- Senha -->
           <div class="col-lg-6">
             <div class="form-group">
               <label class="form-control-label" for="input-senha"
@@ -42,20 +30,44 @@
               />
             </div>
           </div>
+          <!-- Final senha -->
+
+          <!-- Pessoa/Proprietario -->
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="form-control-label" for="input-senha"
+                >Proprietario</label
+              >
+              <input
+                type="text"
+                id="input-senha"
+                class="form-control form-control-alternative"
+                placeholder="Senha"
+                value="Agnaldo Junior"
+              />
+            </div>
+          </div>
+          <!-- Final Pessoa/Proprietario -->
+
+          <!-- Nome -->
           <div class="col-lg-6">
             <div class="form-group">
               <label class="form-control-label" for="input-username"
-                >Nome Completo</label
+                >Nome de usuario</label
               >
               <input
                 type="text"
                 id="input-username"
                 class="form-control form-control-alternative"
                 placeholder="Username"
-                value="Lucas Teste"
+                value="suporte"
               />
+              <p id="aviso">Para o nome de usuario insira apenas letras minusculas e numeros.</p>
             </div>
           </div>
+          <!-- Final nome -->
+
+          <!-- Papel -->
           <div class="col-lg-6">
             <div class="form-group">
               <label class="form-control-label" for="input-papel"
@@ -70,7 +82,10 @@
               />
             </div>
           </div>
-          <div class="col-lg-6">
+          <!-- Final papel -->
+
+          <!-- Status -->
+          <div class="col-lg-6 pl-3">
             <div class="form-group">
               <input 
                 type="checkbox" 
@@ -82,6 +97,11 @@
                 >Ativo</label
               >
             </div>
+
+          </div>
+          <!-- Final Status -->
+          <div class="w-100 mt-4 pl-3">
+            <button id="criar_usuario" class="btn btn-sm">Criar usuario</button>
           </div>
         </div>
         
@@ -198,7 +218,7 @@
           </div>
           <div class="col-lg-4">
             <div class="form-group">
-              <label class="form-control-label" for="input-cidade">Cidade</label>
+              <label class="form-control-label" for="input-cidade">Municipio</label>
               <input
                 type="text"
                 id="input-cidade"
@@ -208,6 +228,8 @@
               />
             </div>
           </div>
+
+          <!-- Pais -->
           <div class="col-lg-4">
             <div class="form-group">
               <label class="form-control-label" for="input-pais"
@@ -222,6 +244,26 @@
               />
             </div>
           </div>
+          <!-- Final Pais -->
+
+
+          <!-- Estado -->
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label class="form-control-label" for="input-pais"
+                >Estado</label
+              >
+              <input
+                type="text"
+                id="input-pais"
+                class="form-control form-control-alternative"
+                placeholder="SC"
+                value="SC"
+              />
+            </div>
+          </div>
+          <!-- Final Estado -->
+
           
         </div>
       </div>
