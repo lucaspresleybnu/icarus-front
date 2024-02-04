@@ -8,6 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { UsuariosModule } from './usuarios/usuarios.module';
 import { FinanceiroModule } from './financeiro/financeiro.module';
 import { DashboardPrincipalComponent } from './dashboard/pages/dashboard-principal/dashboard-principal.component';
+import { provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,11 @@ import { DashboardPrincipalComponent } from './dashboard/pages/dashboard-princip
     FinanceiroModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    provideNgxMask({
+      dropSpecialCharacters: true
+    })
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,112 +5,126 @@
         <h3 class="mb-0">Cadastro de Usuário</h3>
       </div>
       <div class="col-4 text-right">
-        <a href="#!" class="btn btn-sm btn-primary">Lista de Usuários</a>
+        <a href="#!" class="btn btn-sm btn-primary" routerLink="/lista">Lista de Usuários</a>
       </div>
     </div>
   </div>
+
   <div class="card-body">
     <form>
-      <h6 class="heading-small text-muted mb-4">Login</h6>
+      
+      <!-- Dados -->
+      <h6 class="heading-small text-muted mb-4">Dados<span class="text-red">*</span></h6>
       <div class="pl-lg-4">
         <div class="row">
-
-          <!-- Senha -->
-          <div class="col-lg-6">
+          
+          <!-- Nome -->
+          <div class="col-lg-4">
             <div class="form-group">
-              <label class="form-control-label" for="input-senha"
-                >Senha</label
-              >
-              <input
-                type="password"
-                id="input-senha"
-                class="form-control form-control-alternative"
-                placeholder="Senha"
-                value="123456"
-              />
-            </div>
-          </div>
-          <!-- Final senha -->
-
-          <!-- Pessoa/Proprietario -->
-          <div class="col-lg-6">
-            <div class="form-group">
-              <label class="form-control-label" for="input-senha"
-                >Proprietario</label
+              <label class="form-control-label" for="input-email"
+                >Nome</label
               >
               <input
                 type="text"
-                id="input-senha"
+                id="input-email"
                 class="form-control form-control-alternative"
-                placeholder="Senha"
+                placeholder="E-mail"
                 value="Agnaldo Junior"
               />
             </div>
           </div>
-          <!-- Final Pessoa/Proprietario -->
-
-          <!-- Nome -->
-          <div class="col-lg-6">
-            <div class="form-group">
-              <label class="form-control-label" for="input-username"
-                >Nome de usuario</label
-              >
-              <input
-                type="text"
-                id="input-username"
-                class="form-control form-control-alternative"
-                placeholder="Username"
-                value="suporte"
-              />
-              <p id="aviso">Para o nome de usuario insira apenas letras minusculas e numeros.</p>
-            </div>
-          </div>
           <!-- Final nome -->
-
-          <!-- Papel -->
-          <div class="col-lg-6">
+          
+          <!-- Empresa -->
+          <div class="col-lg-4">
             <div class="form-group">
-              <label class="form-control-label" for="input-papel"
-                >Papel</label
+              <label class="form-control-label" for="input-email"
+                >Empresa</label
               >
               <input
                 type="text"
-                id="input-papel"
+                id="input-email"
                 class="form-control form-control-alternative"
-                placeholder="Papel"
-                value="Administrador"
+                placeholder="E-mail"
+                value="Tião"
               />
             </div>
           </div>
-          <!-- Final papel -->
+          <!-- Final empresa -->
 
-          <!-- Status -->
-          <div class="col-lg-6 pl-3">
+          <!-- RG -->
+          <div class="col-lg-4">
             <div class="form-group">
-              <input 
-                type="checkbox" 
-                id="input-ativo"
-                placeholder="Ativar/Desativar usuario"
-                checked
-              />&nbsp;
-              <label class="form-control-label" for="input-ativo"
-                >Ativo</label
+              <label class="form-control-label" for="input-email"
+                >RG</label
               >
+              <input
+                type="text"
+                id="input-email"
+                class="form-control form-control-alternative"
+                placeholder="E-mail"
+                value="46.332.313-0"
+              />
             </div>
+          </div>
+          <!-- Final RG -->
 
+          <!-- CPF -->
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label class="form-control-label" for="input-email"
+                >CPF/CNPJ</label
+              >
+              <input
+                type="text"
+                id="input-email"
+                class="form-control form-control-alternative"
+                placeholder="E-mail"
+                value="885.665.812-54"
+              />
+            </div>
           </div>
-          <!-- Final Status -->
-          <div class="w-100 mt-4 pl-3">
-            <button id="criar_usuario" class="btn btn-sm">Criar usuario</button>
+          <!-- Final CPF -->
+           
+          <!-- SEXO -->
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label class="form-control-label" for="input-email"
+                >SEXO</label
+              >
+              <input
+                type="text"
+                id="input-email"
+                class="form-control form-control-alternative"
+                placeholder="E-mail"
+                value="Masculino"
+              />
+            </div>
           </div>
-        </div>
-        
-      </div>
-      <hr class="my-4" />
-      <!-- Contato -->
-      <h6 class="heading-small text-muted mb-4">Contato</h6>
-      <div class="pl-lg-4">
-        <div class="row">
+          <!-- Final SEXO -->
+                    
+
+           
+          <!-- SEXO -->
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label class="form-control-label" for="input-email"
+                >Data de nascimento</label
+              >
+              <input
+                type="text"
+                id="input-email"
+                class="form-control form-control-alternative"
+                placeholder="E-mail"
+                value="26/12/1965"
+              />
+            </div>
+          </div>
+          <!-- Final SEXO -->
+                    
+
+                    
+          <!-- Telefone -->
           <div class="col-lg-3">
             <div class="form-group">
               <label class="form-control-label" for="input-telefone"
@@ -125,6 +139,28 @@
               />
             </div>
           </div>
+          <!-- Final telefone -->
+
+
+          <!-- Telefone -->
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="form-control-label" for="input-telefone"
+                >Telefone Secundario</label
+              >
+              <input
+                type="text"
+                id="input-telefone"
+                class="form-control form-control-alternative"
+                placeholder="Telefone"
+                value="(47) 98862-1668"
+              />
+            </div>
+          </div>
+          <!-- Final telefone -->
+
+
+          <!-- Email -->
           <div class="col-lg-4">
             <div class="form-group">
               <label class="form-control-label" for="input-email"
@@ -139,11 +175,16 @@
               />
             </div>
           </div>
+          <!-- Final email -->
+
         </div>
       </div>
       <hr class="my-4" />
+      <!-- Final dados -->
+
+
       <!-- Address -->
-      <h6 class="heading-small text-muted mb-4">Endereco</h6>
+      <h6 class="heading-small text-muted mb-4">Endereco<span class="text-red">*</span></h6>
       <div class="pl-lg-4">
         <div class="row">
           <div class="col-lg-2">
@@ -153,6 +194,7 @@
               >
               <input
                 type="text"
+                mask="000-00"
                 id="input-cep"
                 class="form-control form-control-alternative"
                 placeholder="CEP"
@@ -267,6 +309,202 @@
           
         </div>
       </div>
+
+      <!-- Informações do sistema -->
+      <h6 class="heading-small text-muted mb-4">Informações do sistema<span class="text-red">*</span></h6>
+      <div class="pl-lg-4">
+        <div class="row">
+
+          <!-- Status Pessoa fisica -->
+          <div class="col-lg-6 pl-3">
+            <div class="form-group">
+              <input 
+                type="checkbox" 
+                id="input-ativo"
+                placeholder="Ativar/Desativar usuario"
+              />&nbsp;
+              <label class="form-control-label" for="input-ativo"
+                >Cliente</label
+              >
+            </div>
+
+          </div>
+          <!-- Final Status Pessoa fisica-->
+
+          <!-- Status Pessoa fisica -->
+          <div class="col-lg-6 pl-3">
+            <div class="form-group">
+              <input 
+                type="checkbox" 
+                id="input-ativo"
+                placeholder="Ativar/Desativar usuario"
+              />&nbsp;
+              <label class="form-control-label" for="input-ativo"
+                >Pessoa Fisica</label
+              >
+            </div>
+
+          </div>
+          <!-- Final Status Pessoa fisica-->
+
+
+          <!-- Status Pessoa fisica -->
+          <div class="col-lg-6 pl-3">
+            <div class="form-group">
+              <input 
+                type="checkbox" 
+                id="input-ativo"
+                placeholder="Ativar/Desativar usuario"
+              />&nbsp;
+              <label class="form-control-label" for="input-ativo"
+                >Pessoa Juridica</label
+              >
+            </div>
+
+          </div>
+          <!-- Final Status Pessoa fisica-->
+          
+          <!-- Status Colaborador -->
+          <div class="col-lg-6 pl-3">
+            <div class="form-group">
+              <input 
+                type="checkbox" 
+                id="input-ativo"
+                placeholder="Ativar/Desativar usuario"
+              />&nbsp;
+              <label class="form-control-label" for="input-ativo"
+                >Colaborador</label
+              >
+            </div>
+
+          </div>
+          <!-- Final Status Colaborador-->
+
+          <!-- Status -->
+          <div class="col-lg-6 pl-3">
+            <div class="form-group">
+              <input 
+                type="checkbox" 
+                id="input-ativo"
+                placeholder="Ativar/Desativar usuario"
+              />&nbsp;
+              <label class="form-control-label" for="input-ativo"
+                >Fornecedor</label
+              >
+            </div>
+
+          </div>
+          <!-- Final Status Fornecedor -->
+
+          <div class="w-100 mt-4 pl-3">
+            <button id="criar_usuario" class="btn btn-sm">Criar Pessoa</button>
+          </div>
+        </div>
+        
+      </div>
+      <hr class="my-4" />
+      <!-- Final Informações do sistema -->
+      
+
+      <!-- Login -->
+      <h6 class="heading-small text-muted mb-4">Login</h6>
+      <div class="pl-lg-4">
+        <div class="row">
+
+          <!-- Senha -->
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="form-control-label" for="input-senha"
+                >Senha</label
+              >
+              <input
+                type="password"
+                id="input-senha"
+                class="form-control form-control-alternative"
+                placeholder="Senha"
+                value="123456"
+              />
+            </div>
+          </div>
+          <!-- Final senha -->
+
+          <!-- Pessoa/Proprietario -->
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="form-control-label" for="input-senha"
+                >Proprietario<span class="text-red">*</span></label
+              >
+              <input
+                type="text"
+                id="input-senha"
+                class="form-control form-control-alternative"
+                placeholder="Senha"
+                value="Agnaldo Junior"
+              />
+            </div>
+          </div>
+          <!-- Final Pessoa/Proprietario -->
+
+          <!-- Nome -->
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="form-control-label" for="input-username"
+                >Nome de usuario</label
+              >
+              <input
+                type="text"
+                id="input-username"
+                class="form-control form-control-alternative"
+                placeholder="Username"
+                value="suporte"
+              />
+              <p id="aviso">Para o nome de usuario insira apenas letras minusculas e numeros.</p>
+            </div>
+          </div>
+          <!-- Final nome -->
+
+          <!-- Papel -->
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label class="form-control-label" for="input-papel"
+                >Papel</label
+              >
+              <input
+                type="text"
+                id="input-papel"
+                class="form-control form-control-alternative"
+                placeholder="Papel"
+                value="Administrador"
+              />
+            </div>
+          </div>
+          <!-- Final papel -->
+
+          <!-- Status -->
+          <div class="col-lg-6 pl-3">
+            <div class="form-group">
+              <input 
+                type="checkbox" 
+                id="input-ativo"
+                placeholder="Ativar/Desativar usuario"
+                checked
+              />&nbsp;
+              <label class="form-control-label" for="input-ativo"
+                >Ativo</label
+              >
+            </div>
+
+          </div>
+          <!-- Final Status -->
+          <div class="w-100 mt-4 pl-3">
+            <button id="criar_usuario" class="btn btn-sm">Criar usuario</button>
+          </div>
+        </div>
+        
+      </div>
+      <hr class="my-4" />
+      <!-- Fiinal login -->
+      
     </form>
   </div>
 </div>

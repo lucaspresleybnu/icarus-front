@@ -5,6 +5,7 @@ import { ListaUsuariosComponent } from './pages/lista-usuarios/lista-usuarios.co
 import { CadastroUsuariosComponent } from './pages/cadastro-usuarios/cadastro-usuarios.component';
 import { UsuariosRoutingModule } from './usuarios-routing.module';
 import { UsuariosService } from './services/usuarios.service';
+import { provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,12 @@ import { UsuariosService } from './services/usuarios.service';
     UsuariosRoutingModule
   ],
   providers: [
-    UsuariosService
+    UsuariosService,
+    provideNgxMask({
+      dropSpecialCharacters: true,
+      validation: true,
+      showMaskTyped: true
+    })
   ]
 })
 export class UsuariosModule { }
