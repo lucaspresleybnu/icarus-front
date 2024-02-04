@@ -5,7 +5,7 @@ import { ListaUsuariosComponent } from './pages/lista-usuarios/lista-usuarios.co
 import { CadastroUsuariosComponent } from './pages/cadastro-usuarios/cadastro-usuarios.component';
 import { UsuariosRoutingModule } from './usuarios-routing.module';
 import { UsuariosService } from './services/usuarios.service';
-import { provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask';
+import { NgxMaskDirective, provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { provideEnvironmentNgxMask, provideNgxMask } from 'ngx-mask';
   ],
   imports: [
     CommonModule,
-    UsuariosRoutingModule
+    UsuariosRoutingModule,
+    NgxMaskDirective
   ],
   providers: [
     UsuariosService,
