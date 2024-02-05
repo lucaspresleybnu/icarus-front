@@ -14,7 +14,7 @@
     <form>
       
       <!-- Dados -->
-      <h6 class="heading-small text-muted mb-4">Dados<span class="text-red">*</span></h6>
+      <h6 class="heading-small text-muted mb-4">Dados <span class="text-red">*</span></h6>
       <div class="pl-lg-4">
         <div class="row">
           
@@ -188,7 +188,7 @@
 
 
       <!-- Address -->
-      <h6 class="heading-small text-muted mb-4">Endereco<span class="text-red">*</span></h6>
+      <h6 class="heading-small text-muted mb-4">Endereco <span class="text-red">*</span></h6>
       <div class="pl-lg-4">
         <div class="row">
           <div class="col-lg-2">
@@ -318,7 +318,7 @@
       </div>
 
       <!-- Informações do sistema -->
-      <h6 class="heading-small text-muted mb-4">Informações do sistema<span class="text-red">*</span></h6>
+      <h6 class="heading-small text-muted mb-4">Informações do sistema <span class="text-red">*</span></h6>
       <div class="pl-lg-4">
         <div class="row">
 
@@ -476,13 +476,15 @@
               <label class="form-control-label" for="input-papel"
                 >Papel</label
               >
-              <input
+              <select
                 type="text"
                 id="input-papel"
-                class="form-control form-control-alternative"
-                placeholder="Papel"
-                value="Administrador"
-              />
+                class="form-control form-control-alternative">
+                <option value="Administrador" selected>Admin</option>
+                <option value="Atendente">Atendente</option>
+                <option value="Marcenerio">Marcenerio</option>
+                <option value="Financeiro">Financeiro</option>
+              </select>
             </div>
           </div>
           <!-- Final papel -->
